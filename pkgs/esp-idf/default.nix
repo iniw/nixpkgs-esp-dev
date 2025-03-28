@@ -79,6 +79,10 @@ let
 
           # The esp idf vscode extension seems to want pip, too
           pip
+
+          # For Lucas! :)
+          protobuf
+          grpcio-tools
         ]));
 in
 stdenv.mkDerivation rec {
