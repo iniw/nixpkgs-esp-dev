@@ -15,6 +15,9 @@ addIdfEnvVars() {
         addToSearchPath PATH "${IDF_PATH}/components/app_update"
 
 	[ -e "$1/.tool-env" ] && . "$1/.tool-env"
+
+        # FIXME: Remove this once https://github.com/espressif/esp-idf/commit/7124690c29117431362344a2621da61f3edbeb9a lands in an official release
+        export ESP_ROM_ELF_DIR="/this/is/not/used/for/anything"
     fi
 }
 
