@@ -130,7 +130,7 @@ rec {
 
   esp-idf-kconfig = buildPythonPackage rec {
     pname = "esp-idf-kconfig";
-    version = "2.3.0";
+    version = "2.5.0";
     pyproject = true;
 
     build-system = [
@@ -140,7 +140,7 @@ rec {
     src = fetchPypi {
       inherit version;
       pname = "esp_idf_kconfig";
-      sha256 = "sha256-n+8QM5xe+c8UFl8dTndRTBd4QW7nG1NWiYiEdll06wg=";
+      sha256 = "sha256-G65GbZh1tlOITRJG1bDKfHq247f0/1pzLjyAljHg45I=";
     };
 
     doCheck = false;
@@ -189,11 +189,11 @@ rec {
 
   esp-idf-size = buildPythonPackage rec {
     pname = "esp-idf-size";
-    version = "1.6.0";
+    version = "1.6.1";
 
     src = fetchPypi {
       inherit pname version;
-      sha256 = "sha256-sNgfr3iTlGo4cLUZKEqcQ2YEtL/E66bwjATJN1N8Ir8=";
+      sha256 = "sha256-Oki21JiHiS7PzfIj/uQXSjc1KArRKBEDDLRvpQqBI/o=";
     };
 
     doCheck = false;
@@ -209,13 +209,13 @@ rec {
 
   esp-idf-nvs-partition-gen = buildPythonPackage rec {
     pname = "esp-idf-nvs-partition-gen";
-    version = "0.1.3";
+    version = "0.1.8";
     pyproject = true;
 
     src = fetchPypi {
       inherit version;
       pname = "esp_idf_nvs_partition_gen";
-      hash = "sha256-bbD4BoD8Pm/thzwO2wfrMMPWMVsDbNhEvOYm5ERlrP8=";
+      hash = "sha256-O/s0c57HQEAOJU5N0/o4ZkJJ4GmptkvufUtEwu3S8gM=";
     };
 
     build-system = [
@@ -270,14 +270,14 @@ rec {
 
   esp-idf-panic-decoder = buildPythonPackage rec {
     pname = "esp-idf-panic-decoder";
-    version = "1.2.1";
+    version = "1.3.0";
 
     format = "pyproject";
 
     src = fetchPypi {
       inherit version;
       pname = "esp_idf_panic_decoder";
-      sha256 = "sha256-hC8Rje/yMj5qyY8hgErviR4WV3hC0vNCdCQboKXVTYI=";
+      sha256 = "sha256-INLVdgoLNVl0Mik9MyVCXoQRt34eVnvvaiBO0KuSSTI=";
     };
 
     doCheck = false;
